@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.tutlane.com/tutorial/csharp/csharp-tutorial -->
+<html lang="en-US" data-darkreader-mode="filter"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C# Tutorial - Tutlane</title>
+<meta name="description" content="C# tutorial for beginners and experienced with examples. We will learn c# tutorial with a topics like c# architecture, conditional statements, oops concepts, etc. in c#">
+<meta name="keywords" content="learn c#, c# tutorial, csharp tutorial, learn c# programming, learn c# online, c# for beginners, c# programming tutorial, learn csharp tutorial, c# tutorial for beginners, c# course">
+<link rel="canonical" href="https://www.tutlane.com/tutorial/csharp/csharp-tutorial">
+<link rel="shortcut icon" href="https://www.tutlane.com/images/favicon.png" type="image/x-icon">
+<meta property="og:title" content="C# Tutorial - Tutlane">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.tutlane.com/tutorial/csharp/csharp-tutorial">
+   
+   <link href="./C# Tutorial - Tutlane_files/minifiedstyle.css" rel="stylesheet">
+<style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+/* Reverse rule */
+img,
+video,
+:not(object):not(body)>embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background],
+twitterwidget,
+.sr-reader,
+.sr-backdrop {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+[style*="background:url"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] *,
+img[src^="https://s0.wp.com/latex.php"],
+twitterwidget .NaturalImage-image {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.compatibility-with-darkreader-below-4-3-3 {
+  background: white !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+:-webkit-full-screen, :-webkit-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:-moz-full-screen, :-moz-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:fullscreen, :fullscreen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(255,255,255) !important;
+}
+
+/* Custom rules */
+.compatibility-with-darkreader-below-4-3-3 {
+    background: white !important;
+}
+
+}</style></head>
+<body class="">
+    <header class="app-header">
+    <div class="container">
+        <div class="header-logo">
+            <a href="https://www.tutlane.com/">
+                <img alt="Tutlane Logo" height="54" data-sticky-width="82" data-sticky-height="40" src="./C# Tutorial - Tutlane_files/logo.png">
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="dhmenu" class="row header-border hidden-print" style="background-color: #1a1c2b;">
+            <div class="col-md-12" style="float:none">
+                <button class="btn header-btn-collapse-nav ml-0 ml-sm-3 hide-menu-btn hamburger-button" data-toggle="collapse" data-target=".header-nav-main nav" aria-expanded="true" id="btnNavMenu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <nav class="nav-main mega-menu header-navbar nav-bar-align-left hide-menu">
+                    <ul class="nav nav-pills nav-main" id="mainMenu" style="margin-bottom:-10px">
+                        <li class="dropdown" id="homelist">
+                            <a class="dropdown nav-bar-align-left-a" href="https://www.tutlane.com/"><i class="fa fa-home"></i> Home </a>
+                        </li>
+                        <li class="dropdown" id="tutlist">
+                            <a class="dropdown-toggle nav-bar-align-left-a" href="https://www.tutlane.com/tutorials"><i class="fa fa-tree"></i> Tutorials <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/microsoft-technologies" title="Microsoft Technologies Tutorials"><i class="fa fa-windows"></i> Microsoft Technologies Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/java-programming" title="Java Programming Tutorials"><i class="fa fa-joomla"></i> Java Programming Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/web-designing" title="Web Designing Tutorials"><i class="fa fa-paint-brush"></i> Web Designing Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/script-languages" title="Script Programming Tutorials"><i class="fa fa-life-ring"></i> Script Programming Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/databases" title="Database Programming Tutorials"><i class="fa fa-database"></i> Database Programming Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/mobile-technologies" title="Mobile platform tutorials"><i class="fa fa-mobile fa-2x"></i> Mobile Technologies Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tutlane.com/tutorials/other-programming-laguages" title="Other programming tutorials"><i class="fa fa-pagelines"></i> Other Programming Tutorials</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="examplelist">
+                            <a class="dropdown nav-bar-align-left-a" href="https://www.tutlane.com/examples"><i class="fa fa-comments-o"></i> Examples </a>
+
+                        </li>
+                        <li class="dropdown hidden-xs hidden-sm" id="articleslist">
+                            <a class="dropdown nav-bar-align-left-a" href="https://www.tutlane.com/articles"><i class="fa fa-file-text-o"></i> Articles </a>
+                        </li>
+                        <li class="dropdown hidden-xs hidden-sm" id="toolslist">
+                            <a class="dropdown nav-bar-align-left-a" href="https://www.tutlane.com/tools"><i class="fa fa-cogs"></i> Tools </a>
+                        </li>
+                        <li class="dropdown hidden-xs hidden-sm" id="newslist">
+                            <a class="dropdown nav-bar-align-left-a" href="https://www.tutlane.com/news"><i class="fa fa-newspaper-o"></i> News</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<a href="javascript:void(0)" id="scroll_top" style="right: 15px; display: none;"><i class="fa fa-angle-up" style="margin-top: 5px;"></i></a>
+  <div id="divtopicwisedetails">
+  <section class="det_wrapper"><div class="container-fluid">
+    <div class="row"><aside class="sidebar col-md-2 hidden-print hide-menu-list" id="topicsMenu" style=""><ul class="nav nav-list detSideNav">
+          <li>
+            <div class="text-center" style="margin-top:6%"><img src="./C# Tutorial - Tutlane_files/csharp.png" alt="C# tutorial"><h4 class="sidebarHead"><strong>C# Tutorial
+                        </strong></h4>
+            </div>
+          </li>
+          <li class="menuselected"><a href="https://www.tutlane.com/tutorial/csharp"><i class="fa fa-laptop">&nbsp;</i><span>C# Home</span></a></li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Basics of C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-introduction"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Introduction</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-setup-development-environment"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Environment Setup</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-hello-world-program-example"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Hello World Program</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-data-types-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Data Types</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-variables-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Variables</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-value-type-and-reference-type-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Value &amp; Reference Types</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-keywords-reserved-contextual"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Keywords</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-namespaces-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Namespaces</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-comments-single-line-multiline-xml"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Comments</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Operators in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-operators-arithmetic-relational-logical-assignment-precedence"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-arithmetic-operators-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Arithmetic Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-relational-operators-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Relational Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-logical-operators-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Logical Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-bitwise-operators-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Bitwise Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-assignment-operators-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Assignment Operators</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-operators-precedence-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Operators Precedence</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Decision Making in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-if-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# If Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-if-else-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# If Else Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-if-else-if-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# If-Else-If Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-nested-if-else-statements-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Nested If Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-ternary-operator-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Ternary Operator</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-switch-case-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Switch Statement</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Iteration Loops in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-for-loop-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# For loop</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-while-loop-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# While Loop</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-do-while-loop-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Do-While Loop</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-foreach-loop-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Foreach Loop</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Jump Statements in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-break-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Break Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-continue-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Continue Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-goto-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Goto Statement</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-return-statement-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Return Statement</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Methods in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-methods-functions-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Methods</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-pass-by-value-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Pass By Value</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-pass-by-reference-ref-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Pass By Reference</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-out-parameter-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Out Parameter</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-params-keyword-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Params Keyword</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Arrays in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-arrays-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Arrays</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-multidimensional-arrays"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Multidimensional Arrays</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-jagged-arrays-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Jagged Arrays</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-passing-arrays-as-arguments"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Pass Arrays to Functions</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Objects and Classes in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Classes and Objects</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-constructors-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Constructors</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-copy-constructor-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Copy Constructor</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-static-constructor-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Static Constructor</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-private-constructor-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Private Constructor</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-destructor-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Destructor</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-this-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# this</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-static-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Static</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-static-class-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Static Class</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-const-constant-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Constant</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-readonly-property"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Readonly</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-structures-structs"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Structures</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-enum-enumerator"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Enum</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-properties-get-set"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Properties</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-partial-class"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Partial Class</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-partial-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Partial Method</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Strings in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-with-examples"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-split-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Split</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-replace-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Replace</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-concat-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Concat</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-contains-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Contains</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-substring-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Substring</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-compare-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Compare</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-remove-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Remove</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-format-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Format</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-equals-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Equals</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-clone-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Clone</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-copy-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Copy</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-trim-method-trimstart-trimend"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Trim</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-join-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Join</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-indexof-method"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String IndexOf</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-stringbuilder"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# StringBuilder</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>OOPS in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-access-modifiers-public-private-protected-internal"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Access Modifiers</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-encapsulation"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Encapsulation</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-abstraction"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Abstraction</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-inheritance"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Inheritance</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-method-overloading"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Method Overloading</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-method-overriding"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Method Overriding</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-virtual-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Virtual</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-override-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Override</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-base-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Base</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-polymorphism"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Polymorphism</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-sealed-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Sealed</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-abstract"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Abstract</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-interface"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Interface</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-delegates"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Delegates</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-events"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Events</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Collections in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-collections"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Collections</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-arraylist"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Arraylist</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-hashtable"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# HashTable</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-queue"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Queue</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-stack"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Stack</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Generics in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-generics"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Generics</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-generic-constraints"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Generic Constraints</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-generic-collections"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Generic Collections</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-list"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# List</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-sortedlist"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# SortedList</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-dictionary"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Dictionary</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-hashset"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# HashSet</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>File IO in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-system-io-namespace"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# System.IO</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-filestream"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# FileStream</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-textwriter"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# TextWriter</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-textreader"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# TextReader</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-streamwriter"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# StreamWriter</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-streamreader"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# StreamReader</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-binarywriter"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# BinaryWriter</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-binaryreader"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# BinaryReader</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-fileinfo"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# FileInfo</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-directoryinfo"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# DirectoryInfo</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-serialization"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Serialization</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-deserialization"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Deserialization</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Exception Handling in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-exception"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Exception</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-exception-handling"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Exception Handling</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/try-catch-in-csharp"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# try-catch</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/try-catch-finally-in-csharp"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# try-catch-finally</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-throw-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# throw</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-custom-exception"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Custom Exception</span></a></li>
+            </ul>
+          </li>
+          <li class="menuOpen active"><a><i class="fa fa-laptop">&nbsp;</i><span>Advanced Topics in C#</span></a><ul class="subList">
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-var-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Var</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-dynamic-type"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Dynamic Type</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-nullable-types"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Nullable Types</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-anonymous-types"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Anonymous Types</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-anonymous-methods"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Anonymous Methods</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-indexer"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Indexer</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-reflection"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Reflection</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-ienumerable"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# IEnumerable</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-yield-keyword"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Yield</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-regex"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Regex</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-string-interpolation"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# String Interpolation</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-extension-methods"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Extension Methods</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-optional-parameters"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Optional Parameters</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-named-parameters"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Named Parameters</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-threading"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Threading</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/multithreading-in-csharp"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Multithreading</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-thread-sleep"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Sleep</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-thread-lock"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Lock</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-timer"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Timer</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-task"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Task</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-tuple"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Tuple</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-valuetuple"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# ValueTuple</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-linq"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# LINQ</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-func-delegate"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Func</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-action-delegate"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Action</span></a></li>
+              <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-predicate-delegate"><i class="fa fa-hand-o-right">&nbsp;</i><span>C# Predicate</span></a></li>
+            </ul>
+          </li>
+        </ul></aside><div class="detSection col-md-7">
+        <div class="topicHead">
+          <h1>C# Tutorial</h1>
+        </div>
+        <div class="row topicHead">
+          <div class="col-md-12 col-sm-12 gads">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4761500786576152" data-ad-slot="8014928417" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          </div>
+        </div>
+        <div class="row topiccontent">
+          <div class="col-md-12 col-sm-12"><p>Here, in the c# ( c sharp) tutorial you can learn basic to advanced level c# topics with examples. In the c# (c sharp) tutorial, we covered topics like c# operators, c# classes, c# static, c# partial classes, c# methods, c# arrays, c# oops concepts, c# collections, etc. for beginners and experienced with examples.</p>
+<h2 id="divoverview">C# (C Sharp) Tutorial Overview</h2>
+<p><strong>C#</strong> (C Sharp) is an object-oriented programming language that enables developers to build a variety of secure and robust applications that run on the .NET Framework. C# language is a combination of C++ and Java programming features.</p>
+<p>&nbsp;</p>
+<p>In the C# tutorial, we covered topics from basic to advanced level, those are&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+<li><span style="line-height: 22px;"><a title="Data Types in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-data-types-with-examples" target="_blank">Data Types</a></span></li>
+<li><a title="Conditional Statements in C#" href="https://www.tutlane.com/tutorial/csharp/csharp-if-statement-with-examples" target="_blank"><span style="line-height: 22px;">Conditional Statements</span></a></li>
+<li><a title="Arrays in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-arrays-with-examples" target="_blank"><span style="line-height: 22px;">Arrays</span></a></li>
+<li><a title="Access Modifiers in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-access-modifiers-public-private-protected-internal" target="_blank"><span style="line-height: 22px;">Access Modifiers</span></a></li>
+<li><a title="Classes and Objects in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples" target="_blank"><span style="line-height: 22px;">Classes and Objects</span></a></li>
+<li><a title="Constructor in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-constructors-with-examples" target="_blank"><span style="line-height: 22px;">Constructors</span></a></li>
+<li><a title="Structures in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-structures-structs" target="_blank"><span style="line-height: 22px;">Structures</span></a></li>
+<li><a title="Inheritance in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-inheritance" target="_blank"><span style="line-height: 22px;">Inheritance</span></a></li>
+<li><a title="Events in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-events" target="_blank"><span style="line-height: 22px;">Events</span></a></li>
+<li><a title="Delegates in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-delegates" target="_blank"><span style="line-height: 22px;">Delegates</span></a></li>
+<li><a title="Collections in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-collections" target="_blank"><span style="line-height: 22px;">Collections</span></a></li>
+<li><span style="line-height: 22px;"><a title="Generics in C# with Examples" href="https://www.tutlane.com/tutorial/csharp/csharp-generics" target="_blank">Generics</a>&nbsp;</span>and many more topics in c#.</li>
+</ol>
+<h2 id="divaudience">Targeted Audience</h2>
+<p>C# tutorial is prepared to help beginners and experienced people interested in learning and implementing applications using .NET Framework with C#. In the C# tutorial, we covered all the topics from basic to advanced level, and those will give a clear idea of how to use C# in our applications with live examples.</p>
+<h2 id="divprereq">Prerequisites</h2>
+<p>If you have basic knowledge of C,&nbsp;C++&nbsp;programming, it will be easy for you to understand c# tutorial concepts because the same&nbsp;C++&nbsp;programming OOPS (object-oriented&nbsp;programming) concepts we will use it in c# with extra features. If you are not aware of C, C++ programming topics then check our C,&nbsp;C++&nbsp;tutorials.</p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 gads">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4761500786576152" data-ad-slot="2332995667" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          </div>
+          <div class="col-md-6 col-sm-6 gads">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4761500786576152" data-ad-slot="2332995667" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          </div>
+        </div>
+        <div class="row hidden-print previous-next">
+          <div class="col-md-6 col-sm-6">
+                            &nbsp;
+                          </div>
+          <div class="col-md-5 col-sm-5 text-right next-class"><a class="btn btn-primary" href="https://www.tutlane.com/tutorial/csharp/csharp-introduction" title="C# Introduction">
+                            Next <i class="fa fa-arrow-right">&nbsp;</i></a>
+                          &nbsp;
+                        </div>
+        </div>
+      </div>
+      <div class="col-md-3 hidden-xs hidden-sm hidden-print">
+        <h3>Table of Contents</h3>
+        <hr>
+        <ul class="list list-icons  list-borders">
+          <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-tutorial#divoverview" class="scroll" title="C# (C Sharp) Tutorial Overview">C# (C Sharp) Tutorial Overview</a></li>
+          <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-tutorial#divaudience" class="scroll" title="C# (C Sharp) Tutorial Targeted Audience">C# (C Sharp) Tutorial Targeted Audience</a></li>
+          <li><a href="https://www.tutlane.com/tutorial/csharp/csharp-tutorial#divprereq" class="scroll" title="C# (C Sharp) Tutorial Requirements">C# (C Sharp) Tutorial Requirements</a></li>
+        </ul>
+        <div class="gads">
+          <ins class="adsbygoogle tut-ad-rct" data-ad-client="ca-pub-4761500786576152" data-ad-slot="6469615448"></ins>
+        </div>
+        <div class="gads">
+          <ins class="adsbygoogle tut-ad-skyscrap" data-ad-client="ca-pub-4761500786576152" data-ad-slot="3124805379"></ins>
+        </div>
+      </div>
+    </div>
+  </div></section>
+  
+  </div>
+      <footer>
+        <div class="container">
+            <div class="col-md-3">
+                <div class="fItemsHead">
+                    Contact Us
+                </div>
+                <ul class="fItems">
+                    <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> No.1-93, Pochamma Colony, Manikonda, Hyderabad, Telangana - 500089</li>
+                    <!--<li><i class="fa fa-phone"></i> <strong>Phone:</strong> (+91) - 0000000000</li>-->
+                    <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:support@tutlane.com">support@tutlane.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 hidden-print">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="fItemsHead">
+                            Tutorials
+                        </div>
+                        <ul class="fItems">
+                            <li><a href="https://www.tutlane.com/tutorials/web-designing/">Web Designing Tutorials</a></li>
+                            <li><a href="https://www.tutlane.com/tutorials/microsoft-technologies/">.NET Tutorials</a></li>
+                            <li><a href="https://www.tutlane.com/tutorials/java-programming/">JAVA Tutorials</a></li>
+                            <li><a href="https://www.tutlane.com/tutorials/databases/">Database Tutorials</a></li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3">
+                        <div class="fItemsHead">
+                            Company
+                        </div>
+                        <ul class="fItems">
+                            <li><a href="https://www.tutlane.com/about">About Us</a></li>
+                            <li><a href="https://www.tutlane.com/contact">Contact Us</a></li>
+                            <li><a href="javascript:void(0)">Careers</a></li>
+                            <li><a href="https://www.tutlane.com/terms/faqs">FAQ's</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="fItemsHead">
+                            Examples
+                        </div>
+                        <ul class="fItems">
+                            <li><a href="https://www.tutlane.com/example/angularjs">AngularJS Examples</a></li>
+                            <li><a href="https://www.tutlane.com/example/javascript">JavaScript Examples</a></li>
+                            <li><a href="https://www.tutlane.com/example/jquery">jQuery Examples</a></li>
+                            <li><a href="https://www.tutlane.com/example/css">CSS Examples</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="fItemsHead">
+                            Resources
+                        </div>
+                        <ul class="fItems">
+                            <li><a href="javascript:void(0)">Blogs</a></li>
+                            <li><a href="https://www.tutlane.com/articles">Articles</a></li>
+                            <li><a href="https://www.tutlane.com/news">News</a></li>
+                            <li><a href="javascript:void(0)">Forums</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright hidden-print">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-md-7">
+                        <p><i class="fa fa-copyright"></i> 2021 Tutlane | <a href="https://www.tutlane.com/terms/terms-and-conditions">Terms and Conditions</a> | <a href="https://www.tutlane.com/terms/privacy-policy"> Privacy Policy</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-icons">
+
+                         <ul class="social-icons text-right">
+								<li class="social-icons-facebook"><a href="https://www.facebook.com/tutlaneedu" target="_blank" title="Tutlane Facebook Profile Page" rel="noopener"><span style="padding:1%"><i class="fa fa-facebook"></i></span></a></li>
+								<li class="social-icons-twitter"><a href="https://twitter.com/tutlaneedu" target="_blank" title="Tutlane Twitter Profile Page" rel="noopener"><span style="padding:1%"><i class="fa fa-twitter"></i></span></a></li>
+								<li class="social-icons-googleplus"><a href="https://plus.google.com/b/102541813683799502854/102541813683799502854" target="_blank" title="Tutlane Google Plus Profile Page" rel="noopener"><span style="padding:1%"><i class="fa fa-google-plus"></i></span></a></li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script async="" src="./C# Tutorial - Tutlane_files/analytics.js.download"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window, document, 'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72653230-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+     
+    <input type="hidden" id="hdntitle" value="csharp-tutorial">
+    <input type="hidden" id="hdncategory" value="csharp">
+    <script defer="" src="./C# Tutorial - Tutlane_files/tutlane.min.js.download"></script>
+   
+    <script>
+          $(function () {
+              Changemenu('tutlist')
+              CheckUserLogin();
+              
+           });
+	</script>
+     <script async="" defer="" src="./C# Tutorial - Tutlane_files/f.txt"></script>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).onload = function () {
+        [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+            adsbygoogle.push({})
+        })
+     }
+    </script>
+    
+
+
+</body></html>
