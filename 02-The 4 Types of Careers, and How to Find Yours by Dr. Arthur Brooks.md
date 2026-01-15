@@ -7,6 +7,8 @@ career types, job change tips, work-life integration, career happiness
 Title  
 Master Your Career: Types, Changes & Lasting Happiness
 
+Original Vide: https://www.youtube.com/watch?v=5mpyFuyIQ14
+
 ---
 
 # Master Your Career: Types, Changes & Lasting Happiness
