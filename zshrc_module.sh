@@ -42,32 +42,32 @@ l() {
 
   local -a dirs files hidden
 
-  # Non-hidden dirs + files (zsh globs)
   dirs=(*(/N))
   files=(*(.N))
-
-  # Hidden (dot) files/dirs, excluding "." and ".." (no "!" so no history expansion)
   hidden=(.[^.]* .??*(N))
 
-  echo "📁:"
+  # 📁: folders (label + eza grid on same line)
   if (( ${#dirs} )); then
-    eza --icons --grid --group-directories-first -- ${dirs[@]}
+    printf "📁: "
+    eza --icons --grid --group-directories-first --color=always -- ${dirs[@]}
   else
-    echo "- No Folders -"
+    echo "📁: - No Folders -"
   fi
 
-  echo "📎:"
+  # 📎: files
   if (( ${#files} )); then
-    eza --icons --grid --group-directories-first -- ${files[@]}
+    printf "📎: "
+    eza --icons --grid --color=always -- ${files[@]}
   else
-    echo "- No Files -"
+    echo "📎: - No Files -"
   fi
 
-  echo "👻:"
+  # 👻: dotfiles/dotdirs (excluding . and ..)
   if (( ${#hidden} )); then
-    eza --icons --grid -- ${hidden[@]}
+    printf "👻: "
+    eza --icons --grid --color=always -- ${hidden[@]}
   else
-    echo "- No Hidden Files/Folders -"
+    echo "👻: - No Hidden Files/Folders -"
   fi
 }
 
