@@ -38,32 +38,34 @@ unalias l 2>/dev/null
 
 # l = 3-section view: normal dirs -> normal files -> dotfiles
 l() {
-  local out
+  setopt localoptions null_glob
 
-  # 📁: folders
+  local -a dirs files hidden
+
+  # Non-hidden dirs + files (zsh globs)
+  dirs=(*(/N))
+  files=(*(.N))
+
+  # Hidden (dot) files/dirs, excluding "." and ".." (no "!" so no history expansion)
+  hidden=(.[^.]* .??*(N))
+
   echo "📁:"
-  out="$(eza --icons --group-directories-first --only-dirs --ignore-glob='.*' 2>/dev/null || true)"
-  if [[ -n "$out" ]]; then
-    echo "$out"
+  if (( ${#dirs} )); then
+    eza --icons --grid --group-directories-first -- ${dirs[@]}
   else
     echo "- No Folders -"
   fi
 
-  # 📎: files
   echo "📎:"
-  out="$(eza --icons --group-directories-first --only-files --ignore-glob='.*' 2>/dev/null || true)"
-  if [[ -n "$out" ]]; then
-    echo "$out"
+  if (( ${#files} )); then
+    eza --icons --grid --group-directories-first -- ${files[@]}
   else
     echo "- No Files -"
   fi
 
-  # 👻: hidden (dot) files/folders only (excluding . and ..)
   echo "👻:"
-  setopt localoptions nonomatch
-  out="$(eza --icons -d .[^.]* 2>/dev/null || true)"
-  if [[ -n "$out" ]]; then
-    echo "$out"
+  if (( ${#hidden} )); then
+    eza --icons --grid -- ${hidden[@]}
   else
     echo "- No Hidden Files/Folders -"
   fi
