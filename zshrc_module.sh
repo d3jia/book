@@ -42,16 +42,21 @@ l() {
 
   local -a dirs files hidden
 
-  dirs=(*(/N))
-  files=(*(.N))
-  hidden=(.[^.]* .??*(N))
+  # Only directories in current dir
+  dirs=(./*(/N))
 
-  # 📁: folders (label + eza grid on same line)
+  # Only regular files in current dir (no dirs)
+  files=(./*(.N))
+
+  # Only hidden entries in current dir (dotfiles + dotdirs), excluding . and ..
+  hidden=(./.[^.]* ./..?*(N))
+
+  # 📁: folders
   if (( ${#dirs} )); then
     printf "📁: "
-    eza --icons --grid --group-directories-first --color=always -- ${dirs[@]}
+    eza --icons --grid --color=always -- ${dirs[@]}
   else
-    echo "📁: - No Folders -"
+    echo "📁: (No Folders)"
   fi
 
   # 📎: files
@@ -59,15 +64,15 @@ l() {
     printf "📎: "
     eza --icons --grid --color=always -- ${files[@]}
   else
-    echo "📎: - No Files -"
+    echo "📎: (No Files)"
   fi
 
-  # 👻: dotfiles/dotdirs (excluding . and ..)
+  # 👻: hidden
   if (( ${#hidden} )); then
     printf "👻: "
     eza --icons --grid --color=always -- ${hidden[@]}
   else
-    echo "👻: - No Hidden Files/Folders -"
+    echo "👻: (No Hiddens)"
   fi
 }
 
