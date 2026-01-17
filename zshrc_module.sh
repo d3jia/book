@@ -59,14 +59,15 @@ l() {
   fi
 
   # 👻: hidden only (dotfiles + dotdirs), excluding . and ..
-  # Use zsh-safe globs without "!" and silence non-match
   setopt localoptions null_glob
-  local -a hidden
-  hidden=(.[^.]* .??*(N))
+
+  local -a h_all
+  h_all=(.[^.]*)
 
   printf "👻: "
-  if (( ${#hidden} )); then
-    eza --icons --grid --color=always -- ${hidden[@]}
+  if (( ${#h_all} )); then
+    # -d forces "list entries only" (prevents dir expansion like ".git:")
+    eza --icons --grid --color=always -d -- ${h_all[@]}
   else
     echo "- No Hidden Files/Folders -"
   fi
