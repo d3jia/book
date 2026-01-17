@@ -38,41 +38,37 @@ unalias l 2>/dev/null
 
 # l = 3-section view: normal dirs -> normal files -> dotfiles
 l() {
-  setopt localoptions null_glob
-
-  local -a dirs files hidden
-
-  # Only directories in current dir
-  dirs=(./*(/N))
-
-  # Only regular files in current dir (no dirs)
-  files=(./*(.N))
-
-  # Only hidden entries in current dir (dotfiles + dotdirs), excluding . and ..
-  hidden=(./.[^.]* ./..?*(N))
-
   # 📁: folders
-  if (( ${#dirs} )); then
-    printf "📁: "
-    eza --icons --grid --color=always -- ${dirs[@]}
+  printf "📁: "
+  if eza --icons --grid --group-directories-first --only-dirs --ignore-glob='.*' >/dev/null 2>&1; then
+    if [[ -n "$(eza --only-dirs --ignore-glob='.*' 2>/dev/null)" ]]; then
+      eza --icons --grid --group-directories-first --only-dirs --ignore-glob='.*'
+    else
+      echo "- No Folders -"
+    fi
   else
-    echo "📁: (No Folders)"
+    echo "- No Folders -"
   fi
 
   # 📎: files
-  if (( ${#files} )); then
-    printf "📎: "
-    eza --icons --grid --color=always -- ${files[@]}
+  printf "📎: "
+  if [[ -n "$(eza --only-files --ignore-glob='.*' 2>/dev/null)" ]]; then
+    eza --icons --grid --only-files --ignore-glob='.*'
   else
-    echo "📎: (No Files)"
+    echo "- No Files -"
   fi
 
-  # 👻: hidden
+  # 👻: hidden only (dotfiles + dotdirs), excluding . and ..
+  # Use zsh-safe globs without "!" and silence non-match
+  setopt localoptions null_glob
+  local -a hidden
+  hidden=(.[^.]* .??*(N))
+
+  printf "👻: "
   if (( ${#hidden} )); then
-    printf "👻: "
     eza --icons --grid --color=always -- ${hidden[@]}
   else
-    echo "👻: (No Hiddens)"
+    echo "- No Hidden Files/Folders -"
   fi
 }
 
