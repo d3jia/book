@@ -1,8 +1,8 @@
 ### Summary of Consciousness Experiences and Insights
 
-Video: https://www.youtube.com/watch?v=pmomhGE_BGo
-Video Title: `Strange Experiences Of Consciousness That I Have No Scientific Explanation Or Proof For But Thats OK` by Goobie and Doobie
-Summary: The speaker, a former neurosurgeon with extensive neuroscience and cognitive science training (including studies at MIT), shares **deeply personal and unconventional experiences related to consciousness** over the past few years. Despite a strong scientific background, the speaker highlights the **limitations of science in fully explaining consciousness**, primarily because consciousness is unique, non-repeatable, and self-referential—science requires repeatability and objective observation.
+- Video: https://www.youtube.com/watch?v=pmomhGE_BGo
+- Video Title: `Strange Experiences Of Consciousness That I Have No Scientific Explanation Or Proof For But Thats OK` by Goobie and Doobie
+- Summary: The speaker, a former neurosurgeon with extensive neuroscience and cognitive science training (including studies at MIT), shares **deeply personal and unconventional experiences related to consciousness** over the past few years. Despite a strong scientific background, the speaker highlights the **limitations of science in fully explaining consciousness**, primarily because consciousness is unique, non-repeatable, and self-referential—science requires repeatability and objective observation.
 
 ---
 
