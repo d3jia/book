@@ -4,7 +4,7 @@
 # Description: This Gist is meant to be used in Remote BARE env to improved UX. (E.g. Killercoda, KodeKloud)
 # Command to Install: 
 # 
-# curl -fsSL https://gist.githubusercontent.com/d3jia/d6851329a05f36f9e72a9e92bc6aecea/raw/d3jia_devex_setup.sh | bash && source ~/.bashrc
+# curl -fsSL https://tinyurl.com/D3JiaBashrc | bash && source ~/.bashrc
 #
 # ====================================================================================================
 # Last Modified: 19 Jan 2026
