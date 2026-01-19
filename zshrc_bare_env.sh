@@ -14,6 +14,7 @@
 # Bashrc Config → ~/.bashrc
 # =========================
 cat << 'EOF' >> ~/.bashrc
+
 alias kd='kubectl describe'
 alias kgs='kubectl get svc'
 alias kgp='kubectl get pod'
@@ -24,6 +25,7 @@ alias kcc='kubectl config current-context'
 alias kuc='kubectl config use-context'
 export now='--force --grace-period=0'
 export do='--dry-run=client -o yaml'
+
 alias t='terraform'
 alias tf='terraform'
 alias tfi='terraform init'
@@ -31,13 +33,15 @@ alias tf1='terraform init'
 alias tfp='terraform plan'
 alias tfq='terraform plan'
 alias tfa='terraform apply'
+
 alias tf1q='terraform init && terraform plan'
 alias tfqa='terraform plan && terraform apply'
 alias tf1qa='terraform fmt && terraform init && terraform plan && terraform apply'
 alias tfa!='terraform apply -auto-approve'
 alias tf1qa!='terraform init && terraform plan && terraform apply -auto-approve'
 alias tfipa!='terraform init && terraform plan && terraform apply -auto-approve'
-alias tfs='terraform validate'
+
+alias tfv='terraform validate'
 alias tft='terraform test'
 alias tfs='terraform show'
 alias tfst='terraform state'
@@ -48,8 +52,10 @@ alias tfc='terraform console'
 alias tfd='terraform destroy'
 alias tff='terraform fmt'
 alias tfim='terraform import'
+
 alias v='vim'
 alias c='cat'
+
 function cd {
   builtin cd "$@" && la
 }
