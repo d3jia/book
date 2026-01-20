@@ -1,8 +1,12 @@
-# Summary
+# How to Create a Frequency so Magnetic Your Desires Chase You
+
+Okay this is like yet another Law-Of-Attraction pseudo psych metaphysic bs i watch over the interweb but it's pretty interesting. Stonk read! 📈🔭🥳
+
+### Summary
 
 - Video Title: How to Create a Frequency so Magnetic Your Desires Chase You
 - Video Link: https://www.youtube.com/watch?v=R4p7OzTuqHY
-- Summary: This lady summarizes key insights on manifestation, emphasizing the importance of internal energy and frequency over external circumstances. It outlines misconceptions, core teachings, and practical steps for effective manifestation. Stonk! 📈🔭🥳
+- Summary: This lady summarizes key insights on manifestation, emphasizing the importance of internal energy and frequency over external circumstances. It outlines misconceptions, core teachings, and practical steps for effective manifestation. 
 
 [00:00:00]  
 ### Summary of Manifestation Misconceptions and Introduction  
