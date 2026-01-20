@@ -1,3 +1,9 @@
+# Summary
+
+- Video Title: How to Create a Frequency so Magnetic Your Desires Chase You
+- Video Link: https://www.youtube.com/watch?v=R4p7OzTuqHY
+- Summary: This lady summarizes key insights on manifestation, emphasizing the importance of internal energy and frequency over external circumstances. It outlines misconceptions, core teachings, and practical steps for effective manifestation. Stonk! 📈🔭🥳
+
 [00:00:00]  
 ### Summary of Manifestation Misconceptions and Introduction  
 - **Common belief:** Manifesting change in reality is hard, requiring effort, struggle, and yearning. This method is outdated and ineffective.  
