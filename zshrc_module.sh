@@ -5,7 +5,7 @@ set -euo pipefail
 #
 # Version: v1.1.0
 # Last Modified: 17 Jan 2026
-# Installation CMD: curl -fsSL https://gist.githubusercontent.com/d3jia/05e4b54d0231297f78bd1b8293f44421/raw/dj-zsh-aliases-install.sh | bash
+# Installation CMD: curl -fsSL https://github.com/d3jia/book/edit/main/zshrc_module.sh | bash
 # Description: DJ's Zsh modules for core system, eza, kubectl/kubecolor, terraform, and completions.
 #
 ####################################
