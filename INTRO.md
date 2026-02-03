@@ -1,22 +1,20 @@
-Subject: New Joiner Intro – ISAP CMI | Dejia Wang
-
 Hi Trisha,
 
 Thank you for the welcome note. Please find my details below for the ISAP CMI onboarding pack.
 
 Personal Info
-- Name: Dejia Wang  
-- Nationality: Singapore Citizen  
-- Role: DevOps Engineer (External Consultant) – ISAP CMI / Capital Market IT  
-- Reporting Manager: [TL/Manager Name – please confirm if you’d like this to be CACIB line manager or Luxoft manager]
+	•	Name: Dejia Wang
+	•	Nationality: Singapore Citizen
+	•	Role: DevOps Engineer (External Consultant) – ISAP CMI / Capital Market IT
+	•	Reporting Manager: [Reporting Manager Name – please confirm]
 
 Personal Introduction (2 paragraphs)
-I’m a DevOps/SRE engineer with ~4 years of experience supporting cloud and container platforms, primarily around Kubernetes (EKS), CI/CD (GitLab), IaC (Terraform), and observability (Prometheus/Grafana/ELK). In my previous roles, I worked on platform operations, automation, and reliability improvements—building repeatable workflows, tightening deployment pipelines, and reducing operational toil through scripting and standardization.
+I’m a DevOps Engineer with close to 4 years of professional experience, supporting cloud and container environments across CI/CD and infrastructure automation. My recent experience includes working with Kubernetes, GitLab CI/CD, Terraform, Linux, and monitoring/observability tooling such as Prometheus and Grafana. I focus on building reliable, repeatable operational workflows and improving platform stability through automation.
 
-Outside of work, I enjoy strength training at the gym, learning new tooling, and building small automation projects (ChatOps-style scripts/bots that turn operational tasks into simple commands). I’m looking forward to working with the team, learning the CACIB environment, and contributing quickly to platform stability and delivery efficiency.
+Outside of work, I keep active with strength training and I enjoy learning new tools and improving my technical fundamentals. I’m looking forward to getting up to speed on the ISAP CMI environment, collaborating with the team, and contributing consistently to day-to-day delivery and operations.
 
 Additional Info
-- Professional photo: I can provide upon request / once I’m properly set up on the network.
+	•	Professional photo: I can provide once my access setup is completed.
 
-Thanks,  
+Thanks,
 Dejia Wang
