@@ -53,6 +53,9 @@ alias tfd='terraform destroy'
 alias tff='terraform fmt'
 alias tfim='terraform import'
 
+alias tfsl='terraform state list'
+alias tfs1='terraform state list'
+
 alias v='vim'
 alias c='cat'
 
