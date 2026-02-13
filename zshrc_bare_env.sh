@@ -53,6 +53,13 @@ alias tfd='terraform destroy'
 alias tff='terraform fmt'
 alias tfim='terraform import'
 
+alias tfws='terraform workspace'
+alias tfwsl='terraform workspace list'
+alias tfwss='terraform workspace show'
+alias tfwsn='terraform workspace new'
+alias tfwse='terraform workspace select'
+alias tfwsd='terraform workspace delete'
+
 alias tfsl='terraform state list'
 alias tfs1='terraform state list'
 
