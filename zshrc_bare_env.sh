@@ -28,11 +28,12 @@ alias kuc='kubectl config use-context'
 export now='--force --grace-period=0'
 export do='--dry-run=client -o yaml'
 
-alias ka='kubectl apply'
+alias ka='kubectl apply -f'
 alias kaf='kubectl apply -f'
+alias kde='kubectl delete -f'
+alias kdf='kubectl delete -f'
+alias krm='kubectl delete -f'
 alias ke='kubectl edit'
-alias kdel='kubectl delete'
-alias krm='kubectl delete'
 
 alias kl='kubectl logs'
 alias klf='kubectl logs -f'        # Follow logs
