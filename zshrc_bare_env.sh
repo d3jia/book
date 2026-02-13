@@ -17,7 +17,9 @@ cat << 'EOF' >> ~/.bashrc
 
 alias kd='kubectl describe'
 alias kgs='kubectl get svc'
+alias kgsa='kubectl get svc -A'
 alias kgp='kubectl get pod'
+alias kgpa='kubectl get pod -A'
 alias kgn='kubectl get nodes -o wide'
 alias kga='kubectl get all -A'
 alias kgc='kubectl config get-contexts'
