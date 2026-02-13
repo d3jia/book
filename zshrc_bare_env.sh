@@ -26,6 +26,17 @@ alias kuc='kubectl config use-context'
 export now='--force --grace-period=0'
 export do='--dry-run=client -o yaml'
 
+alias ka='kubectl apply'
+alias kaf='kubectl apply -f'
+alias ke='kubectl edit'
+alias kdel='kubectl delete'
+alias krm='kubectl delete'
+
+alias kl='kubectl logs'
+alias klf='kubectl logs -f'        # Follow logs
+alias kex='kubectl exec -it'       # Interactive execute
+alias kg='kubectl get'
+
 alias t='terraform'
 alias tf='terraform'
 alias tfi='terraform init'
