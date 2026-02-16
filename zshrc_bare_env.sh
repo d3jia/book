@@ -28,13 +28,15 @@ alias gpl='git pull'
 alias gd='git diff'
 alias gds='git diff --staged'
 
-# Git Logs ~ https://dev.to/ansdb/10-helpful-flags-to-use-with-git-log-command-1l3k
+# Git Logs ~ Cheatsheet: https://dev.to/ansdb/10-helpful-flags-to-use-with-git-log-command-1l3k
 alias gl='git log'
 alias g1='git log'
 alias gla='git log --all'
+alias glo='git log --oneline'
 alias glp='git log --patch'
 alias glm='git log --merge'
-alias glog='git log --graph --oneline --decorate'
+# Perfect one-liner w/ hash + message + author + date
+alias glog='git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset'
 
 # Kubernetes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias kd='kubectl describe'
