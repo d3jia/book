@@ -37,11 +37,14 @@ alias glm='git log --merge'
 
 # Git Log (One-Line) // 1. The "Perfect one-liner" View  ---  Lists Basics (hash + message + author + date) w/ the --pretty=format flag.
 alias g1="git log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glog="git log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Git Log (Files) // 2. The "What Changed" View  ---  This lists just the filenames. It’s perfect for a quick "what did I actually touch?" check. 
 alias glf="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --name-only"
+alias g1f="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --name-only"
 
 # Git Log (Stats) // 3. The "Impact" View (--stat)  ---  This is the gold standard for DevOps. It shows the filenames plus a "histogram" of insertions and deletions (e.g., main.tf | 14 +++---). 
+alias gls="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 alias g1s="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 
 
