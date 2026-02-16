@@ -7,7 +7,7 @@
 # curl -fsSL https://tinyurl.com/D3JiaBashrc | bash && source ~/.bashrc
 #
 # ====================================================================================================
-# Last Modified: 13 Feb 2026
+# Last Modified: 16 Feb 2026
 # ====================================================================================================
 
 # =========================
@@ -15,6 +15,7 @@
 # =========================
 cat << 'EOF' >> ~/.bashrc
 
+# Git ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias gs='git status'
 alias ga='git add'
 alias gaa='git add -A'
@@ -26,9 +27,16 @@ alias gp='git push'
 alias gpl='git pull'
 alias gd='git diff'
 alias gds='git diff --staged'
-alias gl='git log --name-only'
-alias glog='git log --name-only'
 
+# Git Logs ~ https://dev.to/ansdb/10-helpful-flags-to-use-with-git-log-command-1l3k
+alias gl='git log'
+alias g1='git log'
+alias gla='git log --all'
+alias glp='git log --patch'
+alias glm='git log --merge'
+alias glog='git log --graph --oneline --decorate'
+
+# Kubernetes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias kd='kubectl describe'
 alias kgs='kubectl get svc'
 alias kgsa='kubectl get svc -A'
@@ -54,6 +62,8 @@ alias klf='kubectl logs -f'        # Follow logs
 alias kex='kubectl exec -it'       # Interactive execute
 alias kg='kubectl get'
 
+
+# Terraform ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias t='terraform'
 alias tf='terraform'
 alias tfi='terraform init'
