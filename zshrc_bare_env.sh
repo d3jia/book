@@ -15,6 +15,20 @@
 # =========================
 cat << 'EOF' >> ~/.bashrc
 
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add -A'
+alias gc='git commit -m'
+alias gca='git commit --amend --no-edit'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gp='git push'
+alias gpl='git pull'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gl='git log --name-only'
+alias glog='git log --name-only'
+
 alias kd='kubectl describe'
 alias kgs='kubectl get svc'
 alias kgsa='kubectl get svc -A'
