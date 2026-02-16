@@ -118,6 +118,10 @@ function cd {
 }
 EOF
 
+# Check if "alias ll=" exists; if not, add Ubuntu defaults
+if ! grep -q "^alias ll=" ~/.bashrc; then
+    echo -e "\n# Ubuntu Default ls Aliases\nalias l='ls -CF'\nalias ll='ls -alF'\nalias la='ls -A'" >> ~/.bashrc
+fi
 
 # =========================
 # Vim config → ~/.vimrc
