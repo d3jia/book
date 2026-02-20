@@ -47,6 +47,63 @@ alias g1f="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Crese
 alias gls="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 alias g1s="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ENHANCED GIT WORKFLOW ALIASES
+# These are designed to encourage "Atomic Commits" and cleaner repository history.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# --- STAGING & INSPECTION ---
+
+# The "Patch" command. Walks you through every change "hunk" by hunk. 
+# Best for catching debug statements (console.log) before they are committed.
+alias gap='git add -p'
+
+# Shows what is currently in the staging area. 
+# Use this BEFORE committing to see exactly what will be included in the snapshot.
+alias gds='git diff --staged'
+
+# If you're halfway through a feature but need to switch branches to fix a bug, 
+# use this to "hide" your current work temporarily in a stack.
+alias gsh='git stash'
+
+# Bring back your stashed work when you're ready to continue.
+alias gshp='git stash pop'
+
+# --- COMMITTING ---
+
+# Standard commit with message. 
+# Practice "Conventional Commits" (e.g., gc "feat: add login") for better history.
+alias gc='git commit -m'
+
+# The "Oops" command. Adds staged changes to the PREVIOUS commit instead of creating a new one.
+# Great for fixing typos or missed files without cluttering the log.
+alias gca='git commit --amend --no-edit'
+
+# --- LOGS & VISUALIZATION ---
+
+# "The Tree View": A visual representation of branches and merges.
+# Helps you understand where your branch sits relative to main/origin.
+alias glv='git log --oneline --graph --decorate'
+
+# "The Impact View": Shows the last 5 commits with a summary of which files changed.
+# Perfect for a quick "What did I just do in the last hour?" check.
+alias glstat='git log --stat -n 5'
+
+# --- SMART COMMITTING FUNCTION ---
+
+# Replaces your old GUD function. This prompts for a "Type" to keep messages professional.
+# Usage: gcommit "add login feature" (then select 'feat' from the prompt)
+gcommit() {
+    echo "Select type: [feat, fix, docs, refactor, style, chore]"
+    read -p "Type: " TYPE
+    git commit -m "$TYPE: $1"
+}
+
+# --- MAINTENANCE ---
+
+# Clean up local branches that have already been merged into the current branch.
+# Keeps your 'git branch' list from becoming a graveyard.
+alias gclean='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 # Kubernetes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 alias kd='kubectl describe'
