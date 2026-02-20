@@ -117,7 +117,7 @@ alias v='vim'
 alias c='cat'
 
 function cd {
-  builtin cd "$@" && la
+  builtin cd "$@" && ls -la
 }
 EOF
 
