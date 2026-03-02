@@ -47,6 +47,12 @@ alias g1f="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Crese
 alias gls="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 alias g1s="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --stat"
 
+# Git Log (Patch) // 4. To see the actual code changes (the "patch") instead of just the summary of insertions and deletions
+alias glp="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' -p"
+alias glq="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' -p"
+alias g1p="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' -p"
+alias g1q="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' -p"
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ENHANCED GIT WORKFLOW ALIASES
 # These are designed to encourage "Atomic Commits" and cleaner repository history.
