@@ -7,7 +7,7 @@
 # curl -fsSL https://tinyurl.com/D3JiaBashrc | bash && source ~/.bashrc
 #
 # ====================================================================================================
-# Last Modified: 20 Feb 2026
+# Last Modified: 06 Mar 2026
 # ====================================================================================================
 
 # =========================
@@ -27,6 +27,11 @@ alias gpo='git push origin'
 alias gpl='git pull'
 alias gd='git diff'
 alias gds='git diff --staged'
+
+# Git Stash
+alias gst='git stash'
+alias gstq='git stash pop'
+alias gstp='git stash pop'
 
 # Git Logs ~ Cheatsheet: https://dev.to/ansdb/10-helpful-flags-to-use-with-git-log-command-1l3k
 alias gl='git log'
